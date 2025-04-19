@@ -12,11 +12,11 @@ docker push andrelandim/projeto-database:1.0
 
 echo "Criando serviços no cluster kubernetes....."
 
-kubctl apply -f ./services.yml
+kubectl apply -f ./services.yml
 
 echo "Criando os deployments....."
 
-kubctl apply -f ./deployment.yml
+kubectl apply -f ./deployment.yml
 
 
 
